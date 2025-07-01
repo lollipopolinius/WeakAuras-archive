@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1f22;
+  color: #dcdcdc;
+  display: flex;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #36393f;
+  overflow: hidden;
+}
+
+/* Боковая панель */
+.sidebar {
+  width: 240px;
+  background-color: #2f3136;
+  padding: 15px;
+  border-right: 1px solid #292b2f;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.channels {
+  list-style: none;
+}
+
+.channel {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #36393f;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.channel:hover {
+  background-color: #4f5257;
+}
+
+/* Основное окно чата */
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #36393f;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  background-color: #4a4d52;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message strong {
+  color: #00a6ff;
+}
+
+/* Форма для ввода сообщения */
+.message-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.message-form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #7289da;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.message-form button:hover {
+  background-color: #677bc4;
+}
