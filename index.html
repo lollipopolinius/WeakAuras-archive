@@ -1,1 +1,59 @@
-<h1>Hello, world!</h1>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форум - Как в Discord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Боковая панель -->
+    <aside class="sidebar">
+      <h2>Форум</h2>
+      <ul class="channels">
+        <li class="channel"># общие-темы</li>
+        <li class="channel"># игры</li>
+        <li class="channel"># кино</li>
+        <li class="channel"># технологии</li>
+        <li class="channel"># юмор</li>
+      </ul>
+    </aside>
+
+    <!-- Основная часть -->
+    <main class="chat">
+      <div class="messages">
+        <div class="message">
+          <strong>Пользователь123:</strong>
+          <p>Привет, это первое сообщение в теме!</p>
+        </div>
+        <div class="message">
+          <strong>Геймер_99:</strong>
+          <p>Играю в Cyberpunk, кто присоединяется?</p>
+        </div>
+        <div class="message">
+          <strong>КиноМан:</strong>
+          <p>Посмотрел новый сериал — рекомендую!</p>
+        </div>
+        <div class="message">
+          <strong>ТехноСквот:</strong>
+          <p>AI меняет мир быстрее, чем мы думаем.</p>
+        </div>
+        <div class="message">
+          <strong>Шутник:</strong>
+          <p>У меня сегодня день шуток: почему программисты не любят природу? Там слишком много багов 😂</p>
+        </div>
+      </div>
+
+      <!-- Форма отправки сообщения -->
+      <form class="message-form">
+        <input type="text" placeholder="Напишите сообщение..." required>
+        <button type="submit">Отправить</button>
+      </form>
+    </main>
+
+  </div>
+
+</body>
+</html>
